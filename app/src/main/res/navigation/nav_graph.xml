@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.gstinvoice.pdftoexcel.ui.home.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_home_to_preview"
+            app:destination="@id/previewFragment" />
+        <action
+            android:id="@+id/action_home_to_settings"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_home_to_billing"
+            app:destination="@id/billingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/previewFragment"
+        android:name="com.gstinvoice.pdftoexcel.ui.preview.PreviewFragment"
+        android:label="Preview">
+        <argument
+            android:name="pdfUri"
+            app:argType="string" />
+        <argument
+            android:name="fileName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_preview_to_export"
+            app:destination="@id/exportFragment" />
+        <action
+            android:id="@+id/action_preview_to_billing"
+            app:destination="@id/billingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/exportFragment"
+        android:name="com.gstinvoice.pdftoexcel.ui.export.ExportFragment"
+        android:label="Export" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.gstinvoice.pdftoexcel.ui.settings.SettingsFragment"
+        android:label="Settings" />
+
+    <fragment
+        android:id="@+id/billingFragment"
+        android:name="com.gstinvoice.pdftoexcel.ui.billing.BillingFragment"
+        android:label="Premium" />
+
+</navigation>
