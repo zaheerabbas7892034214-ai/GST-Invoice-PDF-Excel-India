@@ -1,0 +1,39 @@
+.
+├── app
+│   ├── src
+│   │   └── main
+│   │       ├── java
+│   │       │   └── com
+│   │       ├── res
+│   │       │   ├── drawable
+│   │       │   ├── layout
+│   │       │   ├── menu
+│   │       │   ├── mipmap-anydpi-v26
+│   │       │   ├── mipmap-hdpi
+│   │       │   ├── mipmap-mdpi
+│   │       │   ├── mipmap-xhdpi
+│   │       │   ├── mipmap-xxhdpi
+│   │       │   ├── mipmap-xxxhdpi
+│   │       │   ├── navigation
+│   │       │   ├── values
+│   │       │   ├── values-night
+│   │       │   └── xml
+│   │       └── AndroidManifest.xml
+│   ├── build.gradle.kts
+│   └── proguard-rules.pro
+├── gradle
+│   ├── wrapper
+│   │   ├── gradle-wrapper.jar
+│   │   └── gradle-wrapper.properties
+│   └── libs.versions.toml
+├── DEVELOPMENT.md
+├── PLAYSTORE_GUIDE.md
+├── PROJECT_STRUCTURE.txt
+├── README.md
+├── build.gradle.kts
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+└── settings.gradle.kts
+
+22 directories, 15 files
